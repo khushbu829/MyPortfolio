@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khushbu S. Wanjari</title>
+    <title>Khushbu Wanjari</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-        </style>
 </head>
 
 <body>
@@ -21,29 +18,30 @@
             <nav>
                 <div class="navbar">
                     <div class="logo">
-                        <h2><em>Khushbu Wanjari</em></h2>
+                        <p style="padding: 0px 30px;font-family:sofia; font-size: 2em;margin: 15px;"> Khushbu</em></p>
                     </div>
-                    <button class="btn-menu" onclick="menu()"><i class="fa fa-bars"></i></button>
+                    <button  class="btn-menu" onclick="menu()"><i class="fa fa-bars"></i></button>
                 </div>
                 <div class="menu" id="menu">
                     <ul class="menubar">
-                        <li>HOME</li>
-                        <li>SKILLS</li>
-                        <li>CERTIFICATION</li>
-                        <li>EDUCATION</li>
-                        <li>CONTACT</li>
+                        <li> <a href="#"> HOME </a></li>
+                        <li> <a href="#skill"> SKILLS </a></li>
+                        <li> <a href="#certification"> CERTIFICATION </a></li>
+                        <li> <a href="#education"> EDUCATION </a></li>
+                        <li> <a href="#contact"> CONTACT </a></li>
                     </ul>
                 </div>
             </nav>
             <main>
                 <div class="intro">
-                    <p class="p1">Hello ! I'm Khushbu Wanjari</p>
-                    <p class="p2">A frontend web developer</p>
+                    <p class="p1">Hello!</p>
+                    <p class="p1"> I'm <span ><em> Khushbu Wanjari</em></span></p>
+                    <p class="p2">A Web Developer</p>
                     <a class="resume" href="#">View Resume</a>
                 </div>
             </main>
         </header>
-        <section class="about">
+        <section class="about"id="about">
             <h1>About</h1>
             <main class="content">
                 <img src="p.jpg" width="300px" alt=""> <p>
@@ -52,71 +50,7 @@
                 </p>
             </main>
         </section>
-        <section class="skill">
-            <h1>Skills</h1>
-            <main class="content">
-                <div class="progress-bars">
-                    <div class="progress-bar-1"> <span class="progress-badge"> HTM</span>L
-                        <div class="head head-1">
-                            <div class="bar bar-1"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-2"> <span class="progress-badge">CSS3 </span>
-                        <div class="head head-2">
-                            <div class="bar bar-2"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-3"> <span class="progress-badge"> JS </span> <span
-                            class="progress-percentage">50%</span>
-                        <div class="head head-3">
-                            <div class="bar bar-3"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-4"> <span class="progress-badge"> C </span>
-                        <div class="head head-4">
-                            <div class="bar bar-4"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-5"> <span class="progress-badge"> C++</span>
-                        <div class="head head-5">
-                            <div class="bar bar-5"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-6"> <span class="progress-badge"> SQL</span>
-                        <div class="head head-6">
-                            <div class="bar bar-6"></div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </section>
-        <section class="certification">
-            <h1>Certifications</h1>
-            <main class="content">
-                <ul>
-                    <li>
-                        <p>Certificate for Completion of C Training offered by the Spoken Tutorial Project, IIT Bombay.
-                        </p>
-                        <p>Feb 2020</p>
-                        <a href="KHUSHBU-WANJARI-Participant-Certificate (2).pdf">View Certificate</a>
-                    </li>
-                    <li>
-                        <p>Certificate for Completion of Advanced C++ Training offered by the Spoken Tutorial Project,
-                            IIT
-                            Bombay.</p>
-                        <p>July 2021</p>
-                        <a href="KHUSHBU-WANJARI-Participant-Certificate.pdf">View Certificate</a>
-                    </li>
-                </ul>
-                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque porro, illum
-                itaque necessitatibus perferendis veniam ad consequuntur voluptatem rem praesentium eum quibusdam ipsa
-                quasi sunt rerum, dicta repellat ipsam id numquam. Aliquid saepe illum nam ea adipisci reiciendis quis
-                officiis modi architecto quam, in quasi id minima distinctio, qui maiores non molestiae ullam ratione
-                porro nisi commodi ad praesentium? Officiis autem vel ea expedita reiciendis doloremque unde culpa
-                dolorum obcaecati! -->
-            </main>
-        </section>
-        <section class="education">
+        <section class="education"id="education">
             <h1>Education</h1>
             <main class="content">
                 <div>
@@ -147,7 +81,81 @@
                 </div>
             </main>
         </section>
-        <section class="contact">
+        <section class="skill"id="skill">
+            <h1>Skills</h1>
+            <main class="content">
+                <div class="progress-bars">
+                    <div class="progress-bar-1"> <span class="progress-badge"> HTML</span>
+                        <div class="head head-1">
+                            <div class="bar bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-2"> <span class="progress-badge">CSS3 </span>
+                        <div class="head head-2">
+                            <div class="bar bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-3"> <span class="progress-badge"> JS </span>
+                         <!-- <span class="progress-percentage">50%</span> -->
+                        <div class="head head-3">
+                            <div class="bar bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-4"> <span class="progress-badge"> C </span>
+                        <div class="head head-4">
+                            <div class="bar bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-5"> <span class="progress-badge"> C++</span>
+                        <div class="head head-5">
+                            <div class="bar bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-6"> <span class="progress-badge"> SQL</span>
+                        <div class="head head-6">
+                            <div class="bar bar-6"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-7"> <span class="progress-badge"> PHP</span>
+                        <div class="head head-7">
+                            <div class="bar bar-7"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-8"> <span class="progress-badge"> BootStrap</span>
+                        <div class="head head-8">
+                            <div class="bar bar-8"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-9"> <span class="progress-badge"> ReactJS</span>
+                        <div class="head head-9">
+                            <div class="bar bar-9"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </section>
+        <section class="certification">
+            <h1>Certifications</h1>
+            <main class="content">
+                <ul>
+                    <li>
+                        <p>Certificate for Completion of C Training offered by the Spoken Tutorial Project, IIT Bombay.
+                        </p>
+                        <p>Feb 2020</p>
+                        <a href="KHUSHBU-WANJARI-Participant-Certificate (2).pdf">View Certificate</a>
+                    </li>
+                    <li>
+                        <p>Certificate for Completion of Advanced C++ Training offered by the Spoken Tutorial Project,
+                            IIT
+                            Bombay.</p>
+                        <p>July 2021</p>
+                        <a href="KHUSHBU-WANJARI-Participant-Certificate.pdf">View Certificate</a>
+                    </li>
+                </ul>
+            </main>
+        </section>      
+        <section class="contact"id="contact">
             <h1>Contact</h1>
             <main class="content">
                 <div class="items contact" id="contact">
@@ -167,22 +175,21 @@
                                 class="fa fa-linkedin-square"></i> </a> </li>
                 </ul>
             </div>
-            &copy;2022 Designed and developed by Khushbu Wanjari.
+            <span>&copy;2022 Designed and developed by Khushbu Wanjari.</span>
         </footer>
     </div>
-    <script>
+    <script>        
         var a = document.getElementById("menu");
-        a.style.display = "none";
+        a.style.visibility = "hidden";
         function menu() {
-            if (a.style.display == "block") {
-                a.style.display = "none";
+            if (a.style.visibility == "visible") {
+                a.style.visibility = "hidden";
             }
             else {
-                a.style.display = "block";
-                a.style.backgroundColor = "black"
+                a.style.visibility = "visible";
+                a.style.backgroundColor = "black";
             }
         }
-
     </script>
 </body>
 
