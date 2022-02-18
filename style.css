@@ -1,28 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     margin: 0px;
     height: 100%;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-    Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    /* font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto
-    Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
     line-height: 1.60em;
-    font-family: montserrat,helvetica neue,Arial,sans-serif;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(243, 239, 239, 0.692);
     }
     section h1 {
     font-family: "sofia";
     text-align: center;
-    /* border-bottom: 2px solid rgb(252, 3, 44); */
     }
-    header,
-    nav,
-    nav ul,
-    header main,
-    .navbar,header main .intro, .social-media {
+    a{
+        text-decoration: none;
+    }
+    header,    nav,    nav ul,    header main,    .navbar,header main .intro, .social-media {
     display: flex;
     }
-
     .hero {
     height: 100vh;
     position: absolute;
@@ -30,7 +24,7 @@ body {
     z-index: -1;
     background: url("1-hero-image.jpg");
     background-size: cover;
-    filter: brightness(10%);
+    filter: brightness(50%);
     color: white;
     }
 
@@ -39,42 +33,58 @@ body {
     height: 99vh;
     color: white;
     }
-
+header nav a{
+    color: white;
+}
     header nav {
-    flex-grow: 1;
     flex-direction: column;
     }
-
+header nav .navbar{
+    /* background-color: rgb(17, 51, 51); */
+    background-color: rgb(16, 104, 104);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header nav a:visited:active{
+    /* color: orangered; */
+    color: rgb(16, 104, 104);
+}
     header nav .logo {
     /* flex-grow: 1; */
     flex-grow: 20;
-    /* border: 1px solid rgb(128, 119, 0); */
     }
 
     header nav .menubar {
     flex-direction: column;
     list-style: none;
-    /* border: 1px solid rgb(0, 128, 6); */
     }
 
     header nav .menu {
-    /* border: 1px solid rgb(34, 0, 128); */
     flex-grow: 10;
     }
-
+header nav li:hover{
+    border-bottom: 2px solid rgb(16, 104, 104);
+}
     header nav .btn-menu {
     flex-grow: 1;
     color: white;
     margin: 10px;
-    /* border-radius: 5px; */
     border: none;
-    /* border: 1px solid white; */
     font-size: 1em;
-    background-color: black;
+    background-color: transparent;
     }
-
+.certification li a{
+    background-color: rgb(19, 117, 117);
+    color: rgba(255, 255, 255, 0.849);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.certification li a:hover, header main .intro .resume:hover{
+    border:1px solid rgb(16, 104, 104); 
+    background-color: transparent;
+    color: black;
+}
     header main {
-    flex-grow: 10;
+    /* flex-grow: 10; */
     justify-content: center;
     align-items: center;
     }
@@ -86,16 +96,17 @@ body {
     header main .intro .p1{
     font-size: 2em;
     margin: 0px;
+    line-height: 2em;
     font-family: "sofia";
     }
     header main .intro .resume{
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding: 10px 10px;
-    border-radius: 30px;
-    border: 1px solid rgb(212, 207, 207);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-
+    border-radius: 10px;
+    background-color: rgb(16, 104, 104);
+    /* background: linear-gradient(orange,rgb(238, 3, 42)); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     @media screen and (max-width: 800px) {
     section main{
@@ -107,12 +118,16 @@ body {
     img{
         width: 200px;
     }
+    .intro .p1 span em{
+        /* font-size: 1em; */
+    }
     }
     section main {
     /* margin: 0vh 45vh; */
     margin: 0% 20%;
+    background-color: white;
     /* margin: 0px 20px; */
-    padding: 5vh 10vh;
+    padding: 5vh 8vh;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     }
 
@@ -125,10 +140,10 @@ body {
     padding: 7px 0px;
     }
     section .progress-bars .bar-1 {
-    width: 50%;
+    width: 80%;
     }
     section .progress-bars .bar-2 {
-    width: 60%;
+    width: 70%;
     }
     section .progress-bars .bar-3 {
     width: 40%;
@@ -139,9 +154,17 @@ body {
     section .progress-bars .bar-5 {
     width: 50%;
     }
-
     section .progress-bars .bar-6 {
-    width: 70%;
+    width: 60%;
+    }
+    section .progress-bars .bar-7 {
+        width: 50%;
+    }
+    section .progress-bars .bar-8 {
+         width: 60%;
+    }
+    section .progress-bars .bar-9 {
+        width: 20%;
     }
 
     footer {
@@ -150,7 +173,6 @@ body {
     padding: 40px;
     }
     .social-media{
-        /* border: 1px solid red; */
         padding-left: 0px !important;
         list-style: none;
         width: 10em;
@@ -158,13 +180,16 @@ body {
         margin: auto;
      }
      .social-media li a {
-         font-size: 180%;   
+         font-size: 150%;   
      }
      .social-media li .fa-facebook-square:hover, .fa-linkedin-square:hover{
      color: rgb(25, 0, 255) !important;
      }
      .social-media li .fa-instagram:hover{
          color:  rgb(236, 14, 51);
+     }
+     .social-media li a i{
+         color: black;
      }
    .social-media li a i:hover{
        color: black;
