@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+    Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    /* font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto
+    Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+    line-height: 1.60em;
+    font-family: montserrat,helvetica neue,Arial,sans-serif;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    }
+    section h1 {
+    font-family: "sofia";
+    text-align: center;
+    /* border-bottom: 2px solid rgb(252, 3, 44); */
+    }
+    header,
+    nav,
+    nav ul,
+    header main,
+    .navbar,header main .intro, .social-media {
+    display: flex;
+    }
+
+    .hero {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: url("1-hero-image.jpg");
+    background-size: cover;
+    filter: brightness(10%);
+    color: white;
+    }
+
+    header {
+    flex-direction: column;
+    height: 99vh;
+    color: white;
+    }
+
+    header nav {
+    flex-grow: 1;
+    flex-direction: column;
+    }
+
+    header nav .logo {
+    /* flex-grow: 1; */
+    flex-grow: 20;
+    /* border: 1px solid rgb(128, 119, 0); */
+    }
+
+    header nav .menubar {
+    flex-direction: column;
+    list-style: none;
+    /* border: 1px solid rgb(0, 128, 6); */
+    }
+
+    header nav .menu {
+    /* border: 1px solid rgb(34, 0, 128); */
+    flex-grow: 10;
+    }
+
+    header nav .btn-menu {
+    flex-grow: 1;
+    color: white;
+    margin: 10px;
+    /* border-radius: 5px; */
+    border: none;
+    /* border: 1px solid white; */
+    font-size: 1em;
+    background-color: black;
+    }
+
+    header main {
+    flex-grow: 10;
+    justify-content: center;
+    align-items: center;
+    }
+    header main .intro{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    header main .intro .p1{
+    font-size: 2em;
+    margin: 0px;
+    font-family: "sofia";
+    }
+    header main .intro .resume{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(212, 207, 207);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+    }
+    @media screen and (max-width: 800px) {
+    section main{
+        /* margin: 10px; */
+        margin: 1vh !important;
+    /* margin: 0px 20px; */
+    padding: 1vh 5vh !important;
+    }
+    img{
+        width: 200px;
+    }
+    }
+    section main {
+    /* margin: 0vh 45vh; */
+    margin: 0% 20%;
+    /* margin: 0px 20px; */
+    padding: 5vh 10vh;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    }
+
+    section .progress-bars .head {
+    margin: 5px;
+    background-color: rgb(240, 240, 224);
+    }
+    section .progress-bars .bar {
+    background-color: rgb(252, 227, 7);
+    padding: 7px 0px;
+    }
+    section .progress-bars .bar-1 {
+    width: 50%;
+    }
+    section .progress-bars .bar-2 {
+    width: 60%;
+    }
+    section .progress-bars .bar-3 {
+    width: 40%;
+    }
+    section .progress-bars .bar-4 {
+    width: 40%;
+    }
+    section .progress-bars .bar-5 {
+    width: 50%;
+    }
+
+    section .progress-bars .bar-6 {
+    width: 70%;
+    }
+
+    footer {
+    text-align: center;
+    color: grey;
+    padding: 40px;
+    }
+    .social-media{
+        /* border: 1px solid red; */
+        padding-left: 0px !important;
+        list-style: none;
+        width: 10em;
+        justify-content: space-around;
+        margin: auto;
+     }
+     .social-media li a {
+         font-size: 180%;   
+     }
+     .social-media li .fa-facebook-square:hover, .fa-linkedin-square:hover{
+     color: rgb(25, 0, 255) !important;
+     }
+     .social-media li .fa-instagram:hover{
+         color:  rgb(236, 14, 51);
+     }
+   .social-media li a i:hover{
+       color: black;
+   }
