@@ -8,7 +8,7 @@
     <title>Khushbu Wanjari</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
@@ -17,10 +17,8 @@
         <header>
             <nav>
                 <div class="navbar">
-                    <div class="logo">
-                        <p style="padding: 0px 30px;font-family:sofia; font-size: 2em;margin: 15px;"> Khushbu</em></p>
-                    </div>
-                    <button  class="btn-menu" onclick="menu()"><i class="fa fa-bars"></i></button>
+                        <span > Khushbu</span>
+                    <button  class="btn-menu"id="btn-menu" onclick="menu()"><i class="fa fa-bars"></i></button>
                 </div>
                 <div class="menu" id="menu">
                     <ul class="menubar">
@@ -37,20 +35,21 @@
                     <p class="p1">Hello!</p>
                     <p class="p1"> I'm <span ><em> Khushbu Wanjari</em></span></p>
                     <p class="p2">A Web Developer</p>
-                    <a class="resume" href="#">View Resume</a>
+                    <a class="resume" href="Resume.html"target="_blank">View Resume</a>
                 </div>
             </main>
         </header>
-        <section class="about"id="about">
+        <section id="about">
             <h1>About</h1>
             <main class="content">
-                <img src="p.jpg" width="300px" alt=""> <p>
+                    <div class="my-pic"></div>
+                <p>
                 Hello! I'm Khushbu Wanjari , a Web Developer. I am currently pursuing Bachelor of Computer Application
                 (BCA) at Dhote Bandhu Science College, Gondia affilated to Rashtrasant Tukdoji Maharaj Nagpur University.
                 </p>
             </main>
         </section>
-        <section class="education"id="education">
+        <section id="education">
             <h1>Education</h1>
             <main class="content">
                 <div>
@@ -81,9 +80,9 @@
                 </div>
             </main>
         </section>
-        <section class="skill"id="skill">
+        <section id="skill">
             <h1>Skills</h1>
-            <main class="content">
+            <main>
                 <div class="progress-bars">
                     <div class="progress-bar-1"> <span class="progress-badge"> HTML</span>
                         <div class="head head-1">
@@ -96,7 +95,6 @@
                         </div>
                     </div>
                     <div class="progress-bar-3"> <span class="progress-badge"> JS </span>
-                         <!-- <span class="progress-percentage">50%</span> -->
                         <div class="head head-3">
                             <div class="bar bar-3"></div>
                         </div>
@@ -126,18 +124,12 @@
                             <div class="bar bar-8"></div>
                         </div>
                     </div>
-                    <div class="progress-bar-9"> <span class="progress-badge"> ReactJS</span>
-                        <div class="head head-9">
-                            <div class="bar bar-9"></div>
-                        </div>
-                    </div>
-
                 </div>
             </main>
         </section>
-        <section class="certification">
+        <section id="certification">
             <h1>Certifications</h1>
-            <main class="content">
+            <main>
                 <ul>
                     <li>
                         <p>Certificate for Completion of C Training offered by the Spoken Tutorial Project, IIT Bombay.
@@ -155,9 +147,9 @@
                 </ul>
             </main>
         </section>      
-        <section class="contact"id="contact">
+        <section class=""id="contact">
             <h1>Contact</h1>
-            <main class="content">
+            <main>
                 <div class="items contact" id="contact">
                     <p> <i class="fa fa-phone"></i> (+91) 9834507992</p>
                     <p><i class="fa fa-envelope"></i> khushbu181201@gmail.com </p>
@@ -180,15 +172,13 @@
     </div>
     <script>        
         var a = document.getElementById("menu");
-        a.style.visibility = "hidden";
-        function menu() {
-            if (a.style.visibility == "visible") {
-                a.style.visibility = "hidden";
+        function menu(){
+            if(a.style.display=="none"){
+                a.style.display="block";
             }
-            else {
-                a.style.visibility = "visible";
-                a.style.backgroundColor = "black";
-            }
+            else{
+                a.style.display="none";
+            }  
         }
     </script>
 </body>
