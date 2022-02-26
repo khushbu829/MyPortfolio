@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        body {
+            /* margin: 0px; */
+            /* font-size: 15px; */
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(243, 240, 240);
+        }
+        .container {
+            /* width: 21cm; */
+            width: 750px;
+            border: 1px solid rgb(214, 10, 71);
+            /* box-shadow: -10px -10px rgb(214, 10, 71), 30px -30px white, -10px 10px rgb(214, 10, 71), 10px 30px white; */
+            /* border: 10px solid green, 10px solid red,10px solid blue,10px solid black; */
+            border-top: 10px solid rgb(214, 10, 71);
+            border-right: 10px solid rgb(214, 10, 71);
+            border-bottom: 10px solid pink;
+            border-left: 10px solid pink;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 10px 10px 5px #aaaaaa;
+        }
+
+        .container #box-1 {
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        h2 {
+            margin: 0px;
+        }
+
+        .name,
+        h2,
+        h3 {
+            color: rgb(214, 10, 71);
+        }
+
+        #box-3,
+        #box-5,
+        #box-7,
+        #box-9 {
+            border-bottom: 1px solid grey;
+        }
+
+        #box-2 {
+            padding: 10px;
+        }
+
+        #box-2,
+        #box-4,
+        #box-6,
+        #box-8,
+        #box-10 {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        #box-2{
+            grid-template-columns: 1fr 1fr;
+        }
+        #box-6 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        i {
+            color: rgb(167, 7, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1"><span class="name">KHUSHBU</span> <span class="surname">WANJARI</span></div>
+        <div class="box" id="box-2">
+            <span class="phone">
+                <i class="fa fa-phone"></i> (+91) 9834507992
+            </span>
+            <span> <a href="https://www.linkedin.com/in/khushbu-wanjari/" target="_blank"> <i
+                class="fa fa-linkedin-square"></i>
+            linkedin.com/in/khushbu-wanjari/</a>
+    </span>
+            <span class="email">
+                <i class="fa fa-envelope"></i> khushbu181201@gmail.com</span>
+            <span><a href="https://github.com/khushbu829" target="_blank"><i class="fa fa-github"></i>
+                    github.com/khushbu829</a>
+            </span>
+           
+        </div>
+        <div class="box" id="box-3">
+            <h2> EDUCATION</h2>
+        </div>
+        <div class="box" id="box-4">
+            <div class="item-1">
+                <p>Mar 2019 - Present</p>
+            </div>
+            <div class="item-2">
+                <h3>Bachelor of Computer Application (BCA)</h3>
+                <p> D.B.Science College, RTM Nagpur University</p>
+                <p>Pecentage : 82.44%</p>
+            </div>
+            <div class="item-3">
+                <p>Feb 2018 - Feb 2019</p>
+            </div>
+            <div class="item-4">
+                <h3>Higher Secondory Certificate (HSC)</h3>
+                <p> D.B.Science College, RTM Nagpur University</p>
+                <p>Pecentage : 72%</p>
+            </div>
+            <div class="item-5">
+                <p>Mar 2016 - Mar 2017</p>
+            </div>
+            <div class="item-6">
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p> S.S.M.V. (Maharashtra Board) </h3>
+                <p>Pecentage : 87.80%</p>
+                </p>
+            </div>
+        </div>
+        <div class="box" id="box-5">
+            <h2> SKILLS</h2>
+        </div>
+        <div class="box" id="box-6">
+            <div class="s-1">
+                <ul>
+                    <h4>Programming Language</h4>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="s-2">
+                <ul>
+                    <h4>Web Technology</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="s-3">
+                <ul>
+                    <h4>Database</h4>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box" id="box-7">
+            <h2>PERSONAL PROJECT</h2>
+        </div>
+        <div class="box" id="box-8">
+            <div class="item-1">
+                <p> Feb 2022 </p>
+            </div>
+            <div class="item-2">
+                <p>
+                <h4>Personal Portfolio Website </h4>
+                </p>
+                <ul>
+                    <li> Project URL:<a
+                            href="https://khushbu829.github.io/MyPortfolio/">https://khushbu829.github.io/MyPortfolio/</a>
+                    </li>
+                    <li>
+                        <p>Technology Used : HTML, CSS3, JavaScript </p>
+                    </li>
+                    <li>
+                        <p>IDE : Visual Studio Code</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box" id="box-9">
+            <h2> CERTIFICATIONS</h2>
+        </div>
+        <div class="box" id="box-10">
+            <div class="item-1">
+                <p>Feb 2020 </p>
+            </div>
+            <div class="item-2">
+                <p> Certificate for Completion of C Training offered by the Spoken Tutorial Project, IIT Bombay.
+                </p>
+            </div>
+            <div class="item-3">
+                <p>July 2021</p>
+            </div>
+            <div class="item-4">
+                <p> Certificate for Completion of Advanced C++ Training offered by the Spoken Tutorial Project,IIT
+                    Bombay.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
